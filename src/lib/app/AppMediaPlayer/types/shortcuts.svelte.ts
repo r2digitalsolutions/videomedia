@@ -1,3 +1,4 @@
+import { media_player_store } from "../stores";
 import type { Shortcut } from "../stores/ShortcutsStore.svelte";
 
 export const shortcuts: Shortcut[] = [
@@ -6,6 +7,7 @@ export const shortcuts: Shortcut[] = [
     description: "Play/Pause",
     action: () => {
       console.log("Play/Pause");
+      media_player_store.togglePlayback();
     },
   },
   {

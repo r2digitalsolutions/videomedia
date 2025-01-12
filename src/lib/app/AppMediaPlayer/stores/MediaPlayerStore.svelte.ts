@@ -13,6 +13,10 @@ export class MediaPlayerStore {
     this.timeline.toggleCollapsed();
   }
 
+  togglePlayback() {
+    this.#timeline.togglePlaying();
+  }
+
   get isExpanded() {
     return this.#isExpanded;
   }

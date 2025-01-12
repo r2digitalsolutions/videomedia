@@ -3,7 +3,7 @@
 	import PreviewControls from '../Preview/PreviewControls.svelte';
 	import Timeline from '../Timeline/Timeline.svelte';
 	import Toolbar from '../Toolbar/Toolbar.svelte';
-	import ToolbarActive from '../Toolbar/ToolbarActive/ToolbarActive.svelte';
+	import ToolbarActive from '../ToolbarActive/ToolbarActive.svelte';
 
 	let selectedContent = false;
 </script>

@@ -15,7 +15,7 @@
 	};
 
 	const togglePlayback = () => {
-		media_player_store.playing = !media_player_store.playing;
+		media_player_store.togglePlayback();
 	};
 </script>
 
@@ -34,10 +34,15 @@
 				<SkipBack class="h-4 w-4" />
 			</button>
 			<button
-				class="rounded-full bg-blue-600 p-2 text-white hover:bg-blue-700"
+				class={[
+					'rounded-full p-2 text-white',
+					media_player_store.timeline.isPlaying.current
+						? 'bg-red-600 hover:bg-red-700'
+						: 'bg-blue-600 hover:bg-blue-700'
+				]}
 				onclick={togglePlayback}
 			>
-				{#if media_player_store.playing}
+				{#if media_player_store.timeline.isPlaying.current}
 					<Pause class="h-4 w-4" />
 				{:else}
 					<Play class="h-4 w-4" />

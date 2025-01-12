@@ -10,6 +10,10 @@ export class TimelineStore {
     this.#collapsed.toggle();
   }
 
+  togglePlaying() {
+    this.#isPlaying.toggle();
+  }
+
   get isPlaying() {
     return this.#isPlaying;
   }
