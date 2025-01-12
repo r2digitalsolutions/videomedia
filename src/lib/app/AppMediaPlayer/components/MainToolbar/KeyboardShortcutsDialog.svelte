@@ -17,6 +17,7 @@
 					{#each category.items as shortcut (shortcut.keys)}
 						<div class="flex items-center justify-between text-sm">
 							<div class="flex items-center gap-1">
+								current
 								{#each shortcut.keys as key, keyIndex (key)}
 									<kbd class="rounded bg-gray-700 px-2 py-1 text-xs">{key}</kbd>
 									{#if keyIndex < shortcut.keys.length - 1}

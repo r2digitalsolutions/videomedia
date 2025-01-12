@@ -1,27 +1,27 @@
 export class ToggleStore {
-  #open = $state(false);
+  #current = $state(false);
 
   constructor(initialValue: boolean = false) {
-    this.open = initialValue;
+    this.current = initialValue;
   }
 
   onClose = () => {
-    this.open = false;
+    this.current = false;
   }
 
   onOpen = () => {
-    this.open = true;
+    this.current = true;
   }
 
   toggle = () => {
-    this.open = !this.open;
+    this.current = !this.current;
   }
 
-  get open() {
-    return this.#open;
+  get current() {
+    return this.#current;
   }
 
-  set open(value: boolean) {
-    this.#open = value;
+  set current(value: boolean) {
+    this.#current = value;
   }
 }

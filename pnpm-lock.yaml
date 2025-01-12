@@ -43,8 +43,8 @@ importers:
         specifier: ^1.49.1
         version: 1.49.1
       '@r2digisolutions/functions':
-        specifier: ^0.0.8
-        version: 0.0.8(svelte@5.17.3)(tailwindcss@3.4.17)
+        specifier: ^0.1.0
+        version: 0.1.0(svelte@5.17.3)(tailwindcss@3.4.17)
       '@r2digisolutions/ui':
         specifier: ^0.2.9
         version: 0.2.9(svelte@5.17.3)(tailwindcss@3.4.17)
@@ -962,8 +962,8 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
-  '@r2digisolutions/functions@0.0.8':
-    resolution: {integrity: sha512-K0ZAbgWPMsjCjnxu+5bKQMQRFi1km7InD/vMRC/XKKySfskMz/zBd6gvbXgHhud2yRwLkAGEGYOk71hExAbZTw==}
+  '@r2digisolutions/functions@0.1.0':
+    resolution: {integrity: sha512-dgshdj2+w9XW8XLqenziOFDTuavyXmtc+rBqdkzFxu2rJRIO/nmd7PITb6IgHSrRlXUgvZRKaaJ9KtKAoOx9Fw==}
     peerDependencies:
       svelte: ^5.0.0
 
@@ -3153,7 +3153,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@r2digisolutions/functions@0.0.8(svelte@5.17.3)(tailwindcss@3.4.17)':
+  '@r2digisolutions/functions@0.1.0(svelte@5.17.3)(tailwindcss@3.4.17)':
     dependencies:
       '@tailwindcss/container-queries': 0.1.1(tailwindcss@3.4.17)
       '@tailwindcss/forms': 0.5.10(tailwindcss@3.4.17)

@@ -17,7 +17,7 @@
 {#if modal.open}
 	<div
 		bind:this={ref}
-		class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+		class="inset-current50 fixed flex items-center justify-center bg-black bg-opacity-50"
 		transition:fade={{ duration: 200 }}
 	>
 		<div

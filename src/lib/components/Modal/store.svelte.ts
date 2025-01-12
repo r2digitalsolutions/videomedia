@@ -20,7 +20,7 @@ export class ModalStore extends ToggleStore {
   }
 
   onClose = () => {
-    this.open = false;
+    this.current = false;
     this.#actions.onClose?.();
   }
 
@@ -31,7 +31,7 @@ export class ModalStore extends ToggleStore {
   }
 
   effect(open: boolean, ref: HTMLDivElement | undefined = undefined) {
-    this.open = open;
+    this.current = open;
 
     if (ref) {
       document.body.appendChild(ref);
