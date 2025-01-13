@@ -1,9 +1,11 @@
 import { ToggleStore } from "$lib/stores/ToggleStore.svelte";
+import { ProjectStore } from "./ProjectStore.svelte";
 import { ResolutionStore } from "./ResolutionStore.svelte";
 import { TimelineStore } from "./TimelineStore.svelte";
 
 export class MediaPlayerStore {
   #isExpanded = new ToggleStore(false);
+  #project = new ProjectStore();
   #currentResolution = new ResolutionStore();
   #timeline = new TimelineStore();
 
@@ -27,5 +29,9 @@ export class MediaPlayerStore {
 
   get timeline() {
     return this.#timeline;
+  }
+
+  get project() {
+    return this.#project;
   }
 }

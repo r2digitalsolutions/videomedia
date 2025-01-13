@@ -23,7 +23,7 @@
 
 	let activeTab: Tab | undefined = $state(undefined);
 
-	const ComponentPanel = $derived(() => {
+	const ComponentPanel = $derived.by(() => {
 		if (!activeTab) return null;
 		return panels[activeTab];
 	});

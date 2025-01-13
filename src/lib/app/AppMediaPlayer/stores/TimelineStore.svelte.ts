@@ -1,10 +1,14 @@
 import { ToggleStore } from "$lib/stores/ToggleStore.svelte";
+import type { ResolutionMap } from "../types/resolutions";
 
 export class TimelineStore {
+  #data: ResolutionMap = $state({});
   #collapsed = new ToggleStore(false);
   #isPlaying = new ToggleStore(false);
   #currentTime = $state(0);
   #duration = $state(0);
+
+  constructor() { }
 
   toggleCollapsed() {
     this.#collapsed.toggle();
@@ -36,5 +40,9 @@ export class TimelineStore {
 
   get collapsed() {
     return this.#collapsed;
+  }
+
+  get data() {
+    return this.#data;
   }
 }
